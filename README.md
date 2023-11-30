@@ -64,7 +64,7 @@ function custom_auto_close_seconds($seconds) {
 
 ## Support
 
-For support, please [open an issue](https://github.com/your-username/woocommerce-add-to-cart-notification-popup/issues) on GitHub and describe the problem you are facing in detail.
+For support, please [open an issue](https://github.com/webecks/simple-woo-notification/issues) on GitHub and describe the problem you are facing in detail.
 
 ## Contributions
 
