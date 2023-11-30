@@ -1,0 +1,119 @@
+.swcp-popup-wrapper {
+	position: fixed;
+	right: 1em;
+	top: 2vh;
+	z-index: 999999;
+	padding: 1rem;
+	background: #FFFFFF;
+	border: 1px solid #ececec;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 1rem;
+    max-width: 380px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+.popup-slide-in {
+    animation: slideIn .5s ease-in-out;
+}
+
+.popup-slide-out {
+    animation: slideOut .5s ease-in-out;
+}
+
+@keyframes slideIn {
+    from {
+        transform: translateX(100%);
+    }
+    to {
+        transform: translateX(0);
+    }
+}
+@keyframes slideOut {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(100%);
+    }
+}
+
+.line-container {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    overflow: hidden;
+}
+
+.line {
+    width: 0;
+    height: 100%;
+    background-color: #333;
+    animation: lineAnimation var(--line-duration, 5s) linear;
+}
+
+@keyframes lineAnimation {
+    to {
+        width: 100%;
+    }
+}
+@media all and (max-width: 640px) {
+	.swcp-popup-wrapper {
+		right: 0;
+	}
+}
+.swcp-popup-wrapper .heading-popup {
+	display: flex;
+	justify-content: space-between;
+	position: relative;
+}
+.swcp-popup-wrapper .heading-popup span:not(.btn_close_wrapper) {
+    color: #1a1a1a;
+    line-height: 1;
+}
+.swcp-popup-wrapper.image-as-bg {
+	width: 324px;
+	height: 324px;
+	background-size: cover;
+}
+.swcp-popup-wrapper a {
+	display: flex;
+	justify-content: start;
+	gap: 1em;
+}
+.swcp-popup-wrapper .anchorPopup img {
+	max-width: 40%;
+}
+.swcp-popup-wrapper .title-wrapper {
+	display: flex;
+	flex-direction: column;
+	font-weight: bold;
+    line-height: 1;
+    color: #1a1a1a;
+    gap: 1em;
+}
+.swcp-popup-wrapper .title-wrapper .quantity {
+	font-weight: normal;
+}
+.swcp-popup-wrapper #close-popup_wrapper {
+	cursor: pointer;
+    border-radius: 50%;
+    border: 1px solid #1a1a1a;
+    padding: 0em 0.45em 0.2em;
+    color: #1a1a1a;
+    font-size: 20px;
+    line-height: 1.1;
+    position: absolute;
+    right: 0.5em;
+    top: .5em;
+}
+.swcp-popup-wrapper .redirect-to-cart {
+  display: block;
+  width: 100%;
+  background-color: #1a1a1a;
+  border-color: #1a1a1a;
+  color: #FFF;
+  text-transform: uppercase;
+}
