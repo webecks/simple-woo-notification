@@ -1,4 +1,4 @@
-![image](https://github.com/webecks/simple-woo-notification/assets/18439793/54132d34-9aa1-42ae-9d22-89d065e72047)# WooCommerce Add to Cart Notification Popup Plugin
+# WooCommerce Add to Cart Notification Popup Plugin
 
 ## Description
 
