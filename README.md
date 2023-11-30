@@ -54,11 +54,11 @@ Once configured, the plugin will automatically display a notification popup when
 For developers looking to introduce custom behavior, the plugin provides a filter to change the auto-close duration programmatically. Add a custom PHP snippet to your theme's `functions.php` file or a site-specific plugin:
 
 ```php
-add_filter('woocommerce_add_to_cart_notification_popup_auto_close_seconds', 'custom_auto_close_seconds');
-
-function custom_auto_close_seconds($seconds) {
-    // Set your custom duration in seconds
-    return 10; // Example: close after 10 seconds
+add_filter( 'swcp_close_timer', 'custom_close_timer' );
+function custom_close_timer( int $second ) {
+  // Set your custom duration in seconds
+	$second = (int) 6; // Example: close after 6 seconds
+	return $second;
 }
 ```
 
