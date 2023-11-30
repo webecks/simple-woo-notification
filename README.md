@@ -73,5 +73,3 @@ Contributions are welcome! If you would like to contribute, please fork the repo
 ## License
 
 The WooCommerce Add to Cart Notification Popup plugin is open-sourced software licensed under the [GPLv2 license](https://www.gnu.org/licenses/old-licenses/gpl-2.0.en.html).
-
-Remember to replace `your-username` with your actual GitHub username in the support section's link.
